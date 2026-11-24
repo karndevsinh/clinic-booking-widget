@@ -1,0 +1,16 @@
+.cbw { max-width: 520px; margin: 0 auto; padding: 20px; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: #1b2430; background: #fff; border: 1px solid #d9e0e8; border-radius: 12px; }
+.cbw h2 { margin: 0 0 4px; font-size: 1.3rem; }
+.cbw-zone, .cbw-note { margin: 0 0 12px; color: #5b6878; font-size: .9rem; }
+.cbw-label { margin: 16px 0 6px; font-weight: 600; }
+.cbw-days, .cbw-slots { display: flex; flex-wrap: wrap; gap: 8px; }
+.cbw button { padding: 8px 12px; font: inherit; color: inherit; background: #fff; border: 1px solid #b8c4d2; border-radius: 8px; cursor: pointer; }
+.cbw button[aria-pressed="true"] { background: #0b5fff; border-color: #0b5fff; color: #fff; }
+.cbw button:focus-visible, .cbw a:focus-visible, .cbw input:focus-visible, .cbw select:focus-visible { outline: 3px solid #ffb703; outline-offset: 2px; }
+.cbw label { display: block; margin: 14px 0 4px; font-weight: 600; }
+.cbw input, .cbw select { width: 100%; padding: 10px; font: inherit; border: 1px solid #b8c4d2; border-radius: 8px; }
+.cbw-empty { margin: 8px 0 0; color: #8a4b00; }
+.cbw-error { min-height: 1.5em; margin: 10px 0 0; color: #b00020; }
+.cbw-summary { margin: 8px 0; font-weight: 600; }
+.cbw-send { display: block; padding: 12px 16px; text-align: center; font-weight: 600; text-decoration: none; color: #fff; background: #128c3e; border-radius: 8px; }
+.cbw-send[aria-disabled="true"] { background: #9aa7b5; cursor: not-allowed; }
+.cbw [hidden] { display: none; }

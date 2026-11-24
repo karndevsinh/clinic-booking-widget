@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clinic booking widget: demo</title>
+<link rel="stylesheet" href="./src/widget.css">
+<style>body{margin:0;padding:24px 12px;background:#f3f6fa;font-family:system-ui,sans-serif}</style>
+</head>
+<body>
+<div id="booking"></div>
+<script type="module">
+  import { createBookingWidget } from "./src/widget.js";
+
+  // Replace whatsappNumber with the clinic's number (country code, digits only).
+  createBookingWidget(document.getElementById("booking"), {
+    clinicName: "Demo Dental Clinic",
+    whatsappNumber: "910000000000",
+    timezone: "Asia/Kolkata",
+    timezoneLabel: "India time (IST)",
+    slotMinutes: 30,
+    leadMinutes: 60,
+    weekly: {
+      mon: [["09:30", "20:30"]],
+      tue: [["09:30", "20:30"]],
+      wed: [["09:30", "20:30"]],
+      thu: [["09:30", "20:30"]],
+      fri: [["09:30", "20:30"]],
+      sat: [["09:30", "18:00"]],
+      sun: [["10:00", "14:00"]],
+    },
+    closedDates: [],
+    booked: [],
+    treatments: [
+      { id: "consult", label: "Consultation", fee: 500 },
+      { id: "scaling", label: "Scaling and polishing", fee: 1500 },
+      { id: "child", label: "Child's first visit", fee: 0 },
+    ],
+  });
+</script>
+</body>
+</html>
