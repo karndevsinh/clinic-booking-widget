@@ -68,3 +68,7 @@ The browser tests fix the clock (Tuesday 24 Nov 2026, 10:00 IST), so results do 
 ## Licence
 
 MIT. Copyright 2026 Karndevsinh Jhala.
+
+## How it was made
+
+Built by Karndevsinh Jhala with help from Claude Code. The design decisions, review and testing are mine; the AI assisted with drafting code and tests.
